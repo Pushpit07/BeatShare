@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { render } from "react-dom";
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
-import HomePage from "./HomePage";
-import JoinRoomPage from "./JoinRoomPage";
-import CreateRoomPage from "./CreateRoomPage";
-import Room from "./Room";
-import Info from "./Info";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from "./BeatShare/Homepage";
+import JoinRoomPage from "./BeatShare/JoinRoomPage";
+import CreateRoomPage from "./BeatShare/CreateRoomPage";
+import Room from "./BeatShare/Room";
+import Info from "./BeatShare/Info";
 
 
 function App() {
