@@ -50,14 +50,6 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.beatShare_btn_hover {
-	color: #fff !important;
-}
-
-.white_outlined_button {
-	border-color: #fff !important;
-}
-
 .votes_required {
 	font-size: 0.6em;
 	margin-left: 10px;
@@ -67,6 +59,10 @@ body {
 /**************************************************************************/
 /************************    Beat Share Homepage    ***********************/
 /**************************************************************************/
+.beatShare_text {
+	color: rgb(34, 34, 46) !important;
+	font-weight: 600 !important;
+}
 
 .beatShare_homepage_content_center {
 	position: absolute;
@@ -81,7 +77,6 @@ body {
 	left: 0;
 	top: 0;
 	color: white;
-	background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	position: relative;
 	animation: change 8s ease-in-out infinite;
@@ -121,7 +116,7 @@ body {
 	list-style: none;
 	width: 25px;
 	height: 25px;
-	background: rgba(255, 255, 255, 0.2);
+	background: linear-gradient(-30deg, #23a6d5, #23d5ab);
 	animation: boxes_animate 20s linear infinite;
 	bottom: -150px;
 }
@@ -178,5 +173,42 @@ body {
 	100% {
 		transform: translateY(-800px) rotate(360deg);
 		opacity: 0;
+	}
+}
+
+/**************************************************************************/
+/**********************    Beat Share Media Player    *********************/
+/**************************************************************************/
+
+.song_img {
+	border-radius: 3px;
+}
+
+.room_page_votes {
+	margin-bottom: 40px !important;
+}
+
+@media (max-width: 576px) {
+	.room_page_code {
+		font-size: 1.6em !important;
+	}
+
+	.room_page_votes {
+		font-size: 1.2em !important;
+		margin-bottom: 25px !important;
+	}
+
+	.song_img.song_img {
+		max-width: 350px;
+	}
+
+	.room_page_song_name {
+		font-size: 1.2em !important;
+		margin-top: 25px !important;
+	}
+
+	.room_page_controls {
+		margin-top: 15px !important;
+		margin-bottom: 20px !important;
 	}
 }

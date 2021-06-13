@@ -23,26 +23,33 @@ export default function HomePage() {
             {roomCode ? <Redirect to={`/room/${roomCode}`} />
                 :
                 <Grid id="beatShare_homepage">
-                    <Grid container spacing={3} className="beatShare_homepage_content_center index_1">
+                    <Grid container className="center justify-content-center index_1">
                         <Grid item xs={12} align="center">
-                            <Typography variant="h3" component="h3">
+                            <div className="mb-3"><img src="https://img.icons8.com/carbon-copy/400/000000/audio-wave--v2.png" width="100px" /></div>
+                            <Typography variant="h3" component="h3" className="beatShare_text mb-2">
                                 Beat Share
                             </Typography>
                         </Grid>
-                        <Grid item xs={12} align="center" className="mt-1 mb-5">
-                            <ButtonGroup variant="contained">
-                                <Button className="beatShare_btn_hover" color="primary" variant="contained" to="/join" component={Link}>
+
+                        <Grid item xs={12} align="center" className="mt-5 mb-5">
+                            <Link to="/join">
+                                <button className="btn btn-primary text-dark mr-4">
                                     Join a Room
-                                </Button>
-                                <Button className="beatShare_btn_hover" color="secondary" to="/create" component={Link}>
+                                </button>
+                            </Link>
+                            <Link to="/create">
+                                <button className="btn btn-primary ml-3">
                                     Create a Room
-                            </Button>
-                            </ButtonGroup>
+                                </button>
+                            </Link>
                         </Grid>
+
                         <Grid item xs={12} align="center" className="mt-5">
-                            <Button className="beatShare_btn_hover white_outlined_button" variant="outlined" to="/info" component={Link}>
-                                Info
-                            </Button>
+                            <Link to="/info">
+                                <button className="btn btn-primary text-info">
+                                    Info
+                                </button>
+                            </Link>
                         </Grid>
                     </Grid>
 
@@ -55,6 +62,7 @@ export default function HomePage() {
                         <li></li>
                     </ul>
                 </Grid>
+
             }
         </Fragment>
     )

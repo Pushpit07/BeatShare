@@ -36,20 +36,25 @@ export default function JoinRoomPage() {
         <Fragment>
             <Grid container spacing={3} className="center">
                 <Grid item xs={12} align="center">
-                    <Typography component='h4' variant='h4'>
+                    <Typography component='h4' variant='h4' className="beatShare_text mb-3">
                         Join a Room
                     </Typography>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <TextField error={error} label="Code" placeholder="Enter a room code" value={roomCode} helperText={error} variant="outlined" onChange={_handleTextFieldChange} />
+                    <TextField error={error} placeholder="Enter a room code" value={roomCode} helperText={error} variant="outlined" onChange={_handleTextFieldChange} />
                 </Grid>
-                <Grid item xs={12} align="center">
-                    <Button variant="contained" color="primary" onClick={_roomButtonPressed}>Enter Room</Button>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button variant="contained" color="secondary" to="/" component={Link}>Back</Button>
+
+                <Grid item xs={12} align="center" className="mt-4 mb-5">
+                    <Link to="/">
+                        <button className="btn btn-primary text-gray mr-4">
+                            Back
+                        </button>
+                    </Link>
+                    <button className="btn btn-primary text-success ml-3" onClick={_roomButtonPressed}>
+                        Enter Room
+                    </button>
                 </Grid>
             </Grid>
-        </Fragment>
+        </Fragment >
     )
 }

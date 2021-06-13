@@ -81,11 +81,9 @@ export default function Room(props) {
 
     const _renderSettingsButton = () => {
         return (
-            <Grid item xs={12} align="center">
-                <Button variant="contained" color="primary" onClick={() => _updateShowSettings(true)}>
-                    Settings
-                </Button>
-            </Grid>
+            <button className="btn btn-primary text-dark ml-3" onClick={() => _updateShowSettings(true)}>
+                Settings
+            </button>
         )
     }
 
@@ -118,25 +116,26 @@ export default function Room(props) {
     }
     return (
         <Fragment>
-            <Grid container spacing={2} className="center">
+            <Grid container className="center justify-content-center">
                 <Grid item xs={12} align="center">
-                    <Typography variant="h4" component="h4">
+                    <Typography variant="h4" component="h4" className="beatShare_text room_page_code mb-2">
                         Room Code : {params.roomCode}
                     </Typography>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Typography variant="h6" component="h6">
+                    <Typography variant="h6" component="h6" className="beatShare_text room_page_votes">
                         Votes : {votesToSkip}
                     </Typography>
                 </Grid>
                 <MusicPlayer {...song} />
-                {
-                    isHost ? _renderSettingsButton() : null
-                }
+
                 <Grid item xs={12} align="center">
-                    <Button color="secondary" variant="contained" onClick={_leaveButtonPressed}>
+                    <button className="btn btn-primary text-danger mr-4" onClick={_leaveButtonPressed}>
                         Leave Room
-                    </Button>
+                    </button>
+                    {
+                        isHost ? _renderSettingsButton() : null
+                    }
                 </Grid>
             </Grid>
         </Fragment>

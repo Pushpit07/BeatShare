@@ -59,11 +59,17 @@ export default function CreateRoomPage({ update = false, passVotesToSkip = 2, pa
     const _renderCreateButtons = () => {
         return (
             <Grid container spacing={2}>
-                <Grid item xs={12} align="center">
-                    <Button color="primary" variant="contained" onClick={_handleRoomCreation}>Create Room</Button>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button color="secondary" variant="contained" to="/" component={Link}>Back</Button>
+                <Grid item xs={12} align="center" className="mt-4">
+                    <Link to="/">
+                        <button className="btn btn-primary text-gray mr-4">
+                            Back
+                        </button>
+                    </Link>
+                    <Link to="/create">
+                        <button className="btn btn-primary text-success ml-3" onClick={_handleRoomCreation}>
+                            Create Room
+                        </button>
+                    </Link>
                 </Grid>
             </Grid>
         )
@@ -72,11 +78,15 @@ export default function CreateRoomPage({ update = false, passVotesToSkip = 2, pa
     const _renderUpdateButton = () => {
         return (
             <Grid container spacing={2}>
-                <Grid item xs={12} align="center">
-                    <Button color="primary" variant="contained" onClick={_handleRoomUpdation}>Update Room</Button>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button color="secondary" variant="contained" onClick={() => updateShowSettingsCallback(false)}>Close</Button>
+                <Grid item xs={12} align="center" className="mt-4">
+                    <Link to="/">
+                        <button className="btn btn-primary text-gray mr-4" onClick={() => updateShowSettingsCallback(false)}>
+                            Close
+                        </button>
+                    </Link>
+                    <button className="btn btn-primary text-dark ml-3" onClick={_handleRoomUpdation}>
+                        Update Room
+                    </button>
                 </Grid>
             </Grid>
         )
@@ -100,7 +110,7 @@ export default function CreateRoomPage({ update = false, passVotesToSkip = 2, pa
                     </Grid>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Typography component='h4' variant='h4'>
+                    <Typography component='h4' variant='h4' className="beatShare_text mb-2">
                         {title}
                     </Typography>
                 </Grid>
