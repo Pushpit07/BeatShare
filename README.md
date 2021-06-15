@@ -7,7 +7,6 @@ Beat Share is a platform to collaboratively listen music with your friends/famil
 <img src="./beatShare.png">
 
 <br/>
-<br/>
 
 The host sets up play/pause controls while creating the room and can update the room settings later if needed. Members in the room need to vote to skip the current song. If the votes in favour exceed the votes required as set by the host, then the current song is skipped.
 
