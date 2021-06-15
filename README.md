@@ -20,7 +20,6 @@ The application makes use of the Spotify API. So, the host needs to authenticate
 
 ## Project Structure
 
-<hr/>
 <br/>
 
 The application consists of three Django apps-
@@ -102,7 +101,6 @@ _SkipSong:_ To skip the currently playing song
 
 ## Project Setup
 
-<hr/>
 <br/>
 
 1. Clone this repository
@@ -147,7 +145,6 @@ _SkipSong:_ To skip the currently playing song
 
 ## Distinctiveness and Complexity
 
-<hr/>
 <br/>
 
 The project is sufficiently different from all other projects in `CS50’s Web Programming with Python and JavaScript`. It is appropriately complex in the sense that it requires working with the Spotify API and makes use of Django sessions for enhanced experience.
@@ -157,7 +154,6 @@ Three models and more than ten views have been implemented which indicates the l
 
 ## How to make a contribution ?
 
-<hr/>
 <br/>
 
 1. Create a new branch before making any change.
