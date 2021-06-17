@@ -47,7 +47,7 @@ export default function MusicPlayer(props) {
 
                                     <div className="row text-center align-items-center justify-content-center">
                                         <div className="col-12 col-sm-4" align="center">
-                                            <img src={props.image_url} height="100%" width="100%" className="song_img" />
+                                            {props.image_url ? <img src={props.image_url} height="100%" width="100%" className="song_img" /> : <img src="../../../static/images/default_pic.png" height="100%" width="100%" className="song_img" />}
                                         </div>
                                         <div className="col-12 col-sm-8" align="center">
                                             <Typography component="h5" variant="h5" className="room_page_song_name">
