@@ -13,7 +13,7 @@ export default function MusicPlayer(props) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
         };
-        fetch("/spotify/skip", requestOptions);
+        fetch("/spotify/skip", requestOptions).then((response) => console.log(response));
     }
 
     const _pauseSong = () => {
