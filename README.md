@@ -16,7 +16,7 @@ Beat Share is a platform to collaboratively listen music with your friends/famil
 
 The host sets up play/pause controls while creating the room and can update the room settings later if needed. Members in the room need to vote to skip the current song. If the votes in favour exceed the votes required as set by the host, then the current song is skipped.
 
-The application makes use of the Spotify API. So, the host needs to authenticate their Spotify account before setting up the room. Due to Spotify's updated version of the API, the host needs a premium Sportify account to access play/pause & skip controls from within the website.
+The application makes use of the Spotify API. So, the host needs to authenticate their Spotify account before setting up the room. Due to Spotify's updated version of the API, the host needs a premium Spotify account to access play/pause & skip controls from within the website.
 
 <br/>
 
