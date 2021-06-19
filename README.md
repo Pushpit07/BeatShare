@@ -8,7 +8,7 @@ Beat Share is a platform to collaboratively listen music with your friends/famil
 
 <br/>
 
-Visit website: <a href="http://beatshare.in" target="_blank">http://beatshare.in</a>
+**Visit website:** <a href="http://beatshare.in" target="_blank">http://beatshare.in</a>
 
 **YouTube:** <a href="https://youtu.be/-B_bQyh_juY" target="_blank">https://youtu.be/-B_bQyh_juY</a>
 
